@@ -1,0 +1,4 @@
+/Users/ekwong/Documents/git/flink_workspace/flink-1.14.0/bin/flink run /Users/ekwong/IdeaProjects/FlinkTutorial/target/FlinkTutorial-1.0-SNAPSHOT.jar -input1 /Users/ekwong/Downloads/flink_sandbox/exercises/joins/person -input2 /Users/ekwong/Downloads/flink_sandbox/exercises/joins/location -output /Users/ekwong/Downloads/flink_sandbox/exercises/joins/output/rightouterjoin.txt
+
+
+mvn clean package
