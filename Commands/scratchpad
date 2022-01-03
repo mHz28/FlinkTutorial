@@ -2,3 +2,5 @@
 
 
 mvn clean package
+
+nc -l 9999 -o
