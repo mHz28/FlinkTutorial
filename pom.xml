@@ -153,29 +153,29 @@ under the License.
 							<goal>shade</goal>
 						</goals>
 						<configuration>
-							<artifactSet>
-								<excludes>
-									<exclude>org.apache.flink:flink-shaded-force-shading</exclude>
-									<exclude>com.google.code.findbugs:jsr305</exclude>
-									<exclude>org.slf4j:*</exclude>
-									<exclude>org.apache.logging.log4j:*</exclude>
-								</excludes>
-							</artifactSet>
-							<filters>
-								<filter>
-									<!-- Do not copy the signatures in the META-INF folder.
-									Otherwise, this might cause SecurityExceptions when using the JAR. -->
-									<artifact>*:*</artifact>
-									<excludes>
-										<exclude>META-INF/*.SF</exclude>
-										<exclude>META-INF/*.DSA</exclude>
-										<exclude>META-INF/*.RSA</exclude>
-									</excludes>
-								</filter>
-							</filters>
+<!--							<artifactSet>-->
+<!--								<excludes>-->
+<!--									<exclude>org.apache.flink:flink-shaded-force-shading</exclude>-->
+<!--									<exclude>com.google.code.findbugs:jsr305</exclude>-->
+<!--									<exclude>org.slf4j:*</exclude>-->
+<!--									<exclude>org.apache.logging.log4j:*</exclude>-->
+<!--								</excludes>-->
+<!--							</artifactSet>-->
+<!--							<filters>-->
+<!--								<filter>-->
+<!--									&lt;!&ndash; Do not copy the signatures in the META-INF folder.-->
+<!--									Otherwise, this might cause SecurityExceptions when using the JAR. &ndash;&gt;-->
+<!--									<artifact>*:*</artifact>-->
+<!--									<excludes>-->
+<!--										<exclude>META-INF/*.SF</exclude>-->
+<!--										<exclude>META-INF/*.DSA</exclude>-->
+<!--										<exclude>META-INF/*.RSA</exclude>-->
+<!--									</excludes>-->
+<!--								</filter>-->
+<!--							</filters>-->
 							<transformers>
 								<transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-									<mainClass>p1.RightOuterJoin</mainClass>
+									<mainClass>com.windowing.AverageProfileSlidingWindows</mainClass>
 								</transformer>
 							</transformers>
 						</configuration>
