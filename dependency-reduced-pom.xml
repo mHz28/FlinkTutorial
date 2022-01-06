@@ -69,7 +69,7 @@
             <configuration>
               <transformers>
                 <transformer>
-                  <mainClass>com.windowing.AverageProfileSlidingWindows</mainClass>
+                  <mainClass>com.windowing.AverageProfitSlidingWindows</mainClass>
                 </transformer>
               </transformers>
             </configuration>
